@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StatisticArray
 {
-   public static class OptionsManager
+    public static class OptionsManager
     {
         public static int CountLess100(int[] arr)
         {
@@ -23,9 +23,14 @@ namespace StatisticArray
             return arr.Reverse().ToArray();
         }
 
-        public static void PrintArr(int[]arr)
+        public static void PrintArr(int[] arr)
         {
-            Console.WriteLine(string.Join(", ",arr));
+            Console.WriteLine(string.Join(", ", arr));
+        }
+        public static void PrintLess0(int[] arr)
+        {
+            Console.WriteLine(string.Join(", ", arr.Where(x => x < 0).ToArray()));
+
         }
     }
 }
