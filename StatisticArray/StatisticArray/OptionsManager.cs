@@ -17,6 +17,10 @@ namespace StatisticArray
         {
             return arr.Max();
         }
+        public static int MinNum(int[] arr)
+        {
+            return arr.Min();
+        }
 
         public static int[] ReverseArr(int[] arr)
         {
@@ -32,5 +36,11 @@ namespace StatisticArray
             Console.WriteLine(string.Join(", ", arr.Where(x => x < 0).ToArray()));
 
         }
+        public static void PrintGreater5(int[] arr)
+        {
+            Console.WriteLine(string.Join(", ", arr.Where(x => x > 5). ToArray()));
+        }
     }
+
 }
+
